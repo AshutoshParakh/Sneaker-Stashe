@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Product Deletion</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="admin/css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+
+
+
+
+
+    <div class="container">
+        <aside>
+            <!-- Aside tag is used to saprate any part -->
+            <div class="top">
+                <!-- Logo section starting -->
+                <div class="logo">
+                    <img src="img/shoesimg-removebg-preview5.png">
+                    <h2>Creative <span class="danger">Shoes</span></h2>
+                </div>
+                <!-- Close Button -->
+                <div class="close" id="close-btn">
+                    <!-- Close icon -->
+                    <span class="material-icons-sharp"> close </span>
+                </div>
+            </div>
+            <!--Sidebar section-->
+            <div class="slidebar" >
+                <!--option section -->
+                <a href="admin_dashboard.php">
+                    <span class="material-icons-sharp"> grid_view </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="add.html" >
+                    <span class="material-icons-sharp"> add </span>
+                    <h3>Add Product</h3>
+                </a>
+
+                <a href="update.html">
+                    <span class="material-icons-sharp"> update </span>
+                    <h3>Update Product</h3>
+                </a>
+
+                <a href="remove.html" class="active">
+                    <span class="material-icons-sharp"> delete </span>
+                    <h3>Delete Product</h3>
+                </a>
+
+                <a href="orderdetails.php">
+                    <span class="material-icons-sharp"> shopping_basket </span>
+                    <h3>Order Details</h3>
+                </a>
+
+                <a href="display.php">
+                    <span class="material-icons-sharp"> shopping_cart </span>
+                    <h3>Product Details</h3>
+                </a>
+
+                <a href="login.html">
+                    <span class="material-icons-sharp"> logout </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- start of main -->
+        <main class="remove">
+            <form method="POST" id="signup-form" class="signup-form" action="removeform.php">
+                <h2 class="form-title" style="color: red;">REMOVE PRODUCT</h2>
+                <div class="form-group">
+                    <input type="number" class="form-input" name="Pid" id="name" placeholder="Product Id" required />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" style="color: black;" id="submit" class="form-submit"
+                        value="Remove Product" />
+                </div>
+            </form>
+
+        </main>
+        <!-- Ennd of main-->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp"> menu </span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active"> light_mode </span>
+                    <span class="material-icons-sharp"> dark_mode </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Admin</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/profile.jpg" alt="Profile Photo">
+                    </div>
+                </div>
+            </div>
+            <!--End of top -->
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="admin/vendor/jquery/jquery.min.js"></script>
+    <script src="admin/js/main.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://qualitywebs.online/) -->
+
+</html>
